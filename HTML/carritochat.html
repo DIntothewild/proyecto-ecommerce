@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+          <!-- Aquí se mostrarán los elementos del carrito -->
+        </ul>
+        <div id="cart-total">
+          Total: $<span id="total-amount">0.00</span>
+        </div>
+      </div>
+    
+      <div class="products">
+        <h2>Productos Disponibles</h2>
+        <ul id="product-list">
+          <li>
+            <span>Producto 1</span>
+            <button onclick="addToCart(1, 'Producto 1', 10.00)">Agregar al carrito</button>
+          </li>
+          <li>
+            <span>Producto 2</span>
+            <button onclick="addToCart(2, 'Producto 2', 15.00)">Agregar al carrito</button>
+          </li>
+          <!-- Puedes añadir más productos con una estructura similar -->
+        </ul>
+      </div>
+    
+      <script src="script.js"></script>
+</body>
+</html>
