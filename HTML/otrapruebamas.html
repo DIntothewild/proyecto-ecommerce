@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+>
+    <script>
+
+        // Solicitar los datos del usuario
+        var edad = Number(prompt("Introduzca edad"));
+        var dinero = Number(prompt("Introduzca dinero"));
+        var desempleado = prompt("¿Estás desempleado? (si/no)");
+
+        // Convertir los datos a los tipos correctos
+        desempleado = desempleado.toLowerCase() === 'si';
+
+        // Comprobar si el usuario cumple los requisitos para la beca
+        if (edad >= 18 && dinero >= 20000 && desempleado) {
+            alert("¡Felicidades! Cumples los requisitos para optar a la beca");
+        } 
+        else if (edad < 18) {
+            alert("No tienes la edad suficiente");
+        }
+        else if (dinero < 20000) {
+            alert("No tienes el dinero suficiente");
+        }
+        else if (!desempleado) {
+            alert("Debes estar desempleado para optar a la beca");
+        }
+
+    </script>
+ 
+</body>
+</html>

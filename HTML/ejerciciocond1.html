@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Solicitar los datos del usuario
+
+        var edad = Number (prompt ( "Introduzca edad" ));
+        var precio = Number (prompt ("Introduzca dinero"));
+        var desempleado = prompt ("¿estas desempleado? (si/no)");
+        let precioBeca=20000
+
+        //Convertir los datos a los tipos correctos
+
+        precio = Number(precio);
+        desempleado = desempleado.toLocaleLowerCase() == 'si';
+
+        //Comprobar si el usuario cumple los requisitos para la beca
+
+        if (edad >= 18 && precio >= 20000 && desempleado = si);
+         {
+            alert ("Felicidades, cumples los requisitos para optar a la beca");
+            
+        } 
+        else 
+            if (edad < 18) {
+                alert ("No tienes la edad");
+            }
+            else {
+                if (precio < 20000) {
+                    alert ("No tienes el dinero suficiente");
+
+                }
+                else {
+                    if (desempleado = no)
+                {
+                    alert ("debes estar desempleado para optar a la beca");
+                }
+            }
+        }
+   
+    </script>
+</body>
+</html>
